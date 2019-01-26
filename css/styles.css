@@ -1,33 +1,41 @@
-body{
-	
-}
-
 /** HEADER**/
 #header-nav{
-	background-color:grey;
-	border-color: black;
+	background-color: grey;
 	border-width:3px;
-	position:relative;
-	height:80px;
+	border-color:black;
 }
 
-#header-nav .navbar-brand{
+#header-nav .navbar-header a{
 	color:black;
-	font-size:28px;
-	font-weight:750;
-	position:absolute;
-	top:15px;
-	left:15px;
-	margin:auto;
-}
-#header-nav button{
-	background-color:yellow;
-	size:10px 10px;
-	float:right;
-	margin:25px 25px 25px 25px;
+	font-size:25px;
+	margin:10px 15px auto;
+	font-weight: 700;
 }
 
-/** HEADER**/
+#collapsable-nav ul li a{
+	color:black;
+	text-align: center;
+
+}
+
+#collapsable-nav ul{
+	background-color:white;
+	border-width: 2px;
+	border-color:black;
+}
+#collapsable-nav ul li:hover{
+	background-color:#A9A9A9;
+}
+
+#header-nav button, #header-nav button .icon-bar{
+	border:2px solid black;
+	background-color: grey;
+}
+
+
+
+
+/**STARTING CONTENT***/
 
 #title{
 	text-align: center;
@@ -48,9 +56,15 @@ body{
 	text-align:center;
 	font-weight:600;
 }
-#header-nav button, #header-nav button .icon-bar{
-	border:2px solid black;
-	background-color: grey;
+
+/******Larget size****/
+@media(min-width: 992px){
+#header-nav button{
+		display:none;
+	}
+#header-nav > div>ul{
+		display:none;
+	}
 }
 
 /******Medium size*******/
@@ -59,11 +73,23 @@ body{
 		width:100%;
 		height:200px;
 	}
+	#header-nav button{
+		display:none;
+	}
+	#header-nav > div>ul{
+		display:none;
+	}
 }
 /******Medium size*******/
+
+/****small size****/
 @media (max-width:767px){
-	.row{
+.row{
 		width:95%;
 		margin:auto;
-	}
+}
+#menu_details section{
+	height:auto;
+}
+
 }
