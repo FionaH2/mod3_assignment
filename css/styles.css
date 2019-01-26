@@ -33,9 +33,7 @@
 }
 
 
-
-
-/**STARTING CONTENT***/
+/**CONTENT***/
 
 #title{
 	text-align: center;
@@ -80,7 +78,6 @@
 		display:none;
 	}
 }
-/******Medium size*******/
 
 /****small size****/
 @media (max-width:767px){
